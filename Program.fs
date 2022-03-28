@@ -96,7 +96,7 @@ let counts =
     |> Map.ofList
 // write summary
 for count in counts do
-    printfn $"{count.Key}: {count.Value}"
+    // printfn $"{count.Key}: {count.Value}"
     outSummaryFile.WriteLine($"{count.Key}: {count.Value}")
 
 outSummaryFile.Close()
