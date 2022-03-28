@@ -10,6 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Spire.Doc" Version="10.3.5" />
       <PackageReference Include="System.IO.Packaging" Version="7.0.0-preview.2.22152.2" />
     </ItemGroup>
 
