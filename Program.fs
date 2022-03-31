@@ -1,7 +1,7 @@
 open System.IO
 open Spire.Doc
 open System.Text
-let applicationDirectory = "F:\swissedu"
+let applicationDirectory = "D:\swissedu"
 
 let filtered = fun (s: string) -> s.EndsWith("docx")
 
@@ -37,7 +37,7 @@ let getDocxContentSpire (path: string) =
 
     for section in document.Sections do
         for paragraph in section.Paragraphs do
-            stringBuilder.AppendLine(paragraph.Text)
+            stringBuilder.AppendLine(paragraph.Text) |> ignore
 
     stringBuilder
 
@@ -51,7 +51,7 @@ let getDocxContentWordsSpire (path: string) =
             let words = paragraph.Text.Split(" ")
 
             for word in words do
-                stringBuilder.AppendLine(word)
+                stringBuilder.AppendLine(word) |> ignore
 
     stringBuilder
 
