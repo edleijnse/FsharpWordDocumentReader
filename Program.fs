@@ -93,7 +93,8 @@ let counts =
     |> Seq.cast<string>
     |> List.ofSeq
     |> List.countBy id
-    |> Map.ofList
+    |> Map.ofList 
+        
 // write summary
 for count in counts do
     // printfn $"{count.Key}: {count.Value}"
